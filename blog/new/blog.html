@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>First Blog Post</h2>
+                <p class="post-meta">Posted on February 27, 2023</p>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec turpis eget mauris pretium mollis vel a elit. Fusce finibus, sapien vel euismod faucibus, eros ipsum bibendum est, eu feugiat lectus nisl eu arcu.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Second Blog Post</h2>
+                <p class="post-meta">Posted on February 28, 2023</p>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec turpis eget mauris pretium mollis vel a elit. Fusce finibus, sapien vel euismod faucibus, eros ipsum bibendum est, eu feugiat lectus nisl eu arcu.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Blog</p>
+    </footer>
+</body>
+<script>
+    // Get all the navigation links
+    const navLinks = document.querySelectorAll('nav a');
+
+    // Add click event listener to each link
+    navLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            // Prevent the default link behavior
+            event.preventDefault();
+
+            // Remove the "active" class from all links
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Add the "active" class to the clicked link
+            link.classList.add('active');
+
+            // Get the target element ID from the link's "href" attribute
+            const targetId = link.getAttribute('href');
+
+            // Hide all articles
+            document.querySelectorAll('article').forEach(article => {
+                article.style.display = 'none';
+            });
+
+            // Show the target article
+            document.querySelector(targetId).style.display = 'block';
+        });
+    });
+
+    // Show the first article by default
+    document.querySelector('article').style.display = 'block';
+</script></html>
