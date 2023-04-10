@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-image: url("https://ourisland.pts.org.tw/sites/default/files/styles/node_main_img_big_2018/public/upload/node/project/fields/field_image/1170-3%20%283%29%20%281%29%20%281%29.jpg?itok=GXiRa4_4");
+    background-size: cover;
+    opacity: 0.8;
+  }
+  
+  header {
+    background-color: #140606;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f5e503;
+    transition: color 0..2s ease;
+}
+
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #eaeaea;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+article header h2 {
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+article header .post-meta {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+article a.read-more {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+article a.read-more:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+/* 設置 #info-modal 元素的位置、大小、背景色、邊框等屬性 */
+#info-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none; /* 初始狀態下隱藏彈窗 */
+  }
+  
+  /* 設置 .modal-content 元素的樣式 */
+  .modal-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* 設置 .close 元素的樣式 */
+  /* .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+  }
+   */
+  /* 設置 .close:hover 元素的樣式 */
+  /* .close:hover {
+    color: #333;
+  }
+   */
+  

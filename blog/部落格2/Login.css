@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background: #34495e;
+}
+
+.login-box {
+	width: 320px;
+	height: 420px;
+	background: #191919;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	padding: 70px 30px;
+	border-radius: 20px;
+}
+
+h2 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.login-box label {
+	position: absolute;
+	top: 50;
+	left: 0;
+	padding: 10px 0;
+	font-size: 18px;
+	color: #fff;
+	pointer-events: none;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+    margin-left: 65px;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.login-box input[type="text"]:focus, .login-box input[type="password"]:focus {
+	border-bottom: 2px solid #fff;
+}
+
+.login-box button[type="submit-btn"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.login-box button[type="submit-btn"]:hover {
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.login-box a {
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	color: darkgrey;
+	display: block;
+	margin-top: 15px;
+}
+
+.login-box a:hover {
+	color: #ffc107;
+}
+.login-box span {
+	position: absolute;
+	display: block;
+	background: #fb2525;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	animation: animate 2s linear infinite;
+}
+
+.login-box span:nth-child(1) {
+	top: -30px;
+	left: -30px;
+	animation-delay: 0s;
+}
+
+.login-box span:nth-child(2) {
+	top: -30px;
+	right: -30px;
+	animation-delay: 0.5s;
+}
+
+.login-box span:nth-child(3) {
+	bottom: -30px;
+	left: -30px;
+	animation-delay: 1s;
+}
+
+.login-box span:nth-child(4) {
+	bottom: -30px;
+	right: -30px;
+	animation-delay: 1.5s;
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    font-weight: normal;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  /* 選擇一個顏色主題 */
+  /* 亮色主題 */
+  body {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* 暗色主題 */
+  body.dark {
+    background-color: #333;
+    color: #f7f7f7;
+  }
+  
+  li:hover {
+    background-color: #555;
+  }
+  
